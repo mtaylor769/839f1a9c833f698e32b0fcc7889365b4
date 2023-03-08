@@ -1,0 +1,21 @@
+{
+  "name": "dt_appointments_ui",
+  "displayName": "dt_appointments_ui",
+  "android": {
+    "package": "com.dt_appointments_ui"
+  },
+  "ios": {
+    "bundleIdentifier": "com.dt-appointments-ui"
+  },
+  "extra": {
+    "eas": {
+      "projectId": "7f987784-053d-4aa8-bcfa-97234a3877bd"
+    }
+  },
+  "runtimeVersion": {
+    "policy": "sdkVersion"
+  },
+  "updates": {
+    "url": "https://u.expo.dev/7f987784-053d-4aa8-bcfa-97234a3877bd"
+  }
+}
