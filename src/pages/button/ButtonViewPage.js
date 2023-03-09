@@ -6,7 +6,7 @@ import LinkButton from '../../components/linkButton';
 import Strings from '../../utils/Strings';
 import {View} from 'react-native';
 
-const ButtonView = () => {
+const ButtonViewPage = () => {
   const [show, setShow] = useState(false);
   return (
     <View>
@@ -69,4 +69,4 @@ const ButtonView = () => {
   );
 };
 
-export default ButtonView;
+export default ButtonViewPage;
