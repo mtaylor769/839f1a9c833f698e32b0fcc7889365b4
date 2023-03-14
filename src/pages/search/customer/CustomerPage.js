@@ -18,7 +18,7 @@ import {
   isValidPhone,
 } from './CustomerController';
 
-import DTButton from '../../../components//dtButton/index';
+import DTButton from '../../../components/dtButton/index';
 import DTListDropDown from '../../../components/dtListdropDown';
 import LinkButton from '../../../components/linkButton';
 import React from 'react';

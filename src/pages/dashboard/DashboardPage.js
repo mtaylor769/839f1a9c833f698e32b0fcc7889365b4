@@ -1,10 +1,3 @@
-import React, {useEffect} from 'react';
-import {Text} from 'react-native';
-import {
-  CardStyleInterpolators,
-  createStackNavigator,
-} from '@react-navigation/stack';
-
 import {
   ButtonViewPage,
   DebugPage,
@@ -15,11 +8,18 @@ import {
   TabPage,
   TextInputPage,
 } from '../';
-import Typo from '../../utils/Typo';
+import {
+  CardStyleInterpolators,
+  createStackNavigator,
+} from '@react-navigation/stack';
+import React, {useEffect} from 'react';
+import {gql, useQuery} from '@apollo/client';
+
 import {NavigationContainer} from '@react-navigation/native';
-import {useQuery, gql} from '@apollo/client';
-import {useAtom} from 'jotai';
+import {Text} from 'react-native';
+import Typo from '../../utils/Typo';
 import {atomWithStorage} from 'jotai/utils';
+import {useAtom} from 'jotai';
 
 const RootStack = createStackNavigator();
 
@@ -31,20 +31,19 @@ const basicQuery = gql`
 
 const dataAtom = atomWithStorage('hello', 'loading...');
 
-const DashboardPage = () => {
+const DashboardPage = _props => {
   const [currdata, setData] = useAtom(dataAtom);
   const {loading, error, data} = useQuery(basicQuery);
-
   useEffect(() => {
     if (data) setData(data);
   }, [data, setData]);
 
   return (
     <>
-      {loading && <Text>Loading...</Text>}
-      {error && <Text>Error: {JSON.stringify(error)}</Text>}
-      <Text>{JSON.stringify(currdata.hello)}</Text>
       <NavigationContainer>
+        {loading && <Text>Loading...</Text>}
+        {error && <Text>Error: {JSON.stringify(error)}</Text>}
+        <Text>{JSON.stringify(currdata.hello)}</Text>
         <RootStack.Navigator
           screenOptions={{
             cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,

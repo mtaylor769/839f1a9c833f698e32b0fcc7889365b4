@@ -1,8 +1,8 @@
-import React from 'react';
-import CustomerSearchScreen from '../search/customer/CustomerPage';
+import CustomerSearchPage from '../search/customer/CustomerPage';
 import DTTabComponent from '../../components/tabComponent';
-import VehicleSearchPage from '../search/vehicle/VehicleSearchPage';
-import VtvAirCheckPage from '../search/vtvAir/VTVAirCheckPage';
+import React from 'react';
+import VehicleSearchScreen from '../search/vehicle/VehicleSearchPage';
+import VtvAirCheckPage from '../search/./vtvAir/VTVAirCheckPage';
 
 const TabPage = () => {
   const TabNames = [
@@ -12,8 +12,8 @@ const TabPage = () => {
   ];
   const Component = {
     first: VtvAirCheckPage,
-    second: CustomerSearchScreen,
-    third: VehicleSearchPage,
+    second: CustomerSearchPage,
+    third: VehicleSearchScreen,
   };
   return <DTTabComponent TabNames={TabNames} Component={Component} />;
 };

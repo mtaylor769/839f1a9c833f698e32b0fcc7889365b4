@@ -10,7 +10,10 @@ const client = new ApolloClient({
   uri: GQL_ENDPOINT,
 });
 
+console.log(GQL_ENDPOINT)
+
 const store = Jotai.createStore();
+console.log({client, store});
 
 export default function App() {
   return (
