@@ -3,7 +3,7 @@ import {Horizontal, VtvAircheckView} from './VTVAirCheckStyles';
 import DTButtonView from '../../../components/dtButton/index';
 import React from 'react';
 
-const VtvAircheck = () => {
+const VtvAirCheckPage = () => {
   return (
     <VtvAircheckView>
       <Horizontal />
@@ -27,4 +27,4 @@ const VtvAircheck = () => {
   );
 };
 
-export default VtvAircheck;
+export default VtvAirCheckPage;

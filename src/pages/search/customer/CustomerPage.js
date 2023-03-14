@@ -28,7 +28,7 @@ import {TextInputField} from '../../../components/textInput/index';
 import {View} from 'react-native';
 import {useState} from 'react';
 
-const CustomerSearchScreen = () => {
+const CustomerSearchPage = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -241,4 +241,4 @@ const CustomerSearchScreen = () => {
   );
 };
 
-export default CustomerSearchScreen;
+export default CustomerSearchPage;

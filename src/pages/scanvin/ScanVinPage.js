@@ -19,7 +19,7 @@ import {
   VehicleInfo,
   VinNumber,
   VinNumberImage,
-} from './ScanningVinStyles';
+} from './ScanVinStyles';
 import React, {useState} from 'react';
 
 import Icon from '../../components/icons';
@@ -29,7 +29,7 @@ import Strings from '../../utils/Strings';
 
 let happy = true; // if value of happy is false, the screen with unhappy path will get rendered
 
-export const ScanningVin = _props => {
+export const ScanVinPage = _props => {
   const {showModal, setShowModal} = _props;
   const [scan, setScan] = useState(false);
   const [buttonLabel, setButtonLabel] = useState(Strings.scan);
@@ -103,4 +103,4 @@ export const ScanningVin = _props => {
   );
 };
 
-export default ScanningVin;
+export default ScanVinPage;

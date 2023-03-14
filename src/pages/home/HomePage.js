@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 
 import DebugButton from '../../components/debugButton';
-import ScanningVin from '../scanvin/ScanningVinPage';
+import {ScanVinPage} from '../';
 import {ScreenContainer} from '../../common/theme/CommonStyles';
 import {useNavigation} from '@react-navigation/core';
 
-const HomeScreen = () => {
+const HomePage = () => {
   const navigation = useNavigation();
   const [showModal, setShowModal] = useState(false);
   const changeModal = value => {
@@ -67,8 +67,8 @@ const HomeScreen = () => {
       />
     </ScreenContainer>
   ) : (
-    <ScanningVin showModal={showModal} setShowModal={changeModal} />
+    <ScanVinPage showModal={showModal} setShowModal={changeModal} />
   );
 };
 
-export default HomeScreen;
+export default HomePage;

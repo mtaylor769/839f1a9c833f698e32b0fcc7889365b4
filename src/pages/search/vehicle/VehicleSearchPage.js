@@ -14,14 +14,14 @@ import DTButton from '../../../components/dtButton/index';
 import DTListDropDown from '../../../components/dtListdropDown';
 import ICONS_URI from '../../../utils/IconUris';
 import Icon from '../../../components/icons/index';
-import ScanVin from '../../../pages/scanvin/ScanningVinPage';
+import ScanVinPage from '../../../pages/scanvin/ScanVinPage';
 import ServerErrorView from '../../../components/serverErrorview/index';
 import {SpacerV20} from '../../../common/theme/CommonStyles';
 import Strings from '../../../utils/Strings';
 import {TextInputField} from '../../../components/textInput/index';
 import {validateAlphaNumericVIN} from '../../../utils/Utils';
 
-const VehicleSearchScreen = ({}) => {
+const VehicleSearchPage = ({}) => {
   const [state, setState] = useState({
     vin: '',
     license: '',
@@ -251,8 +251,8 @@ const VehicleSearchScreen = ({}) => {
       </KeyboardAvoidingView>
     </>
   ) : (
-    <ScanVin showModal={state.showModal} setShowModal={changeModal} />
+    <ScanVinPage showModal={state.showModal} setShowModal={changeModal} />
   );
 };
 
-export default VehicleSearchScreen;
+export default VehicleSearchPage;

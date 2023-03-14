@@ -1,8 +1,7 @@
+import React from 'react';
 import {Text, View} from 'react-native';
 
-import React from 'react';
-
-const DebugScreen = () => {
+const DebugPage = () => {
   return (
     <View>
       <Text>Debug Screen</Text>
@@ -10,4 +9,4 @@ const DebugScreen = () => {
   );
 };
 
-export default DebugScreen;
+export default DebugPage;
