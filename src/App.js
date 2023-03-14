@@ -11,6 +11,7 @@ const client = new ApolloClient({
 });
 
 const store = Jotai.createStore();
+console.log({client, store});
 
 export default function App() {
   return (

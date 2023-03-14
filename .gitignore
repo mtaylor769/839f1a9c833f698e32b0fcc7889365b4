@@ -16,9 +16,6 @@ dist/
 # Log files
 *.log
 
-# Package files
-# *.jar
-
 # Maven
 target/
 dist/
@@ -52,4 +49,6 @@ Thumbs.db
 .vscode/
 
 # Local .env file
-.env
+.env/
+
+ios/Pods/**

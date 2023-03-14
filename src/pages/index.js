@@ -10,8 +10,8 @@ import TextInputPage from './textInput/TextInputPage';
 
 export {
   ButtonViewPage,
-  DashboardPage,
   DebugPage,
+  DashboardPage,
   HomePage,
   LoginPage,
   ScanVinPage,

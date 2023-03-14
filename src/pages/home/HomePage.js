@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
+import {useNavigation} from '@react-navigation/core';
 
 import DebugButton from '../../components/debugButton';
-import {ScanVinPage} from '../';
+import ScanVinPage from '../scanvin/ScanVinPage';
 import {ScreenContainer} from '../../common/theme/CommonStyles';
-import {useNavigation} from '@react-navigation/core';
 
 const HomePage = () => {
   const navigation = useNavigation();

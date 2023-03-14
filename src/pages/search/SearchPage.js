@@ -1,6 +1,6 @@
-import React from 'react';
 import CustomerSearchPage from './customer/CustomerPage';
 import DTTabComponent from '../../components/tabComponent';
+import React from 'react';
 import VehicleSearchScreen from './vehicle/VehicleSearchPage';
 import VtvAirCheckPage from './vtvAir/VTVAirCheckPage';
 
